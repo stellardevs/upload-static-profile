@@ -15,24 +15,32 @@
     <div class="menu-icon"><i class="fas fa-bars"></i></div>
     <section id="menu">
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="./index.html">Home</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./work.html">Portfolio</a>
+        <a href="./contact.html">Contact</a>
       </nav>
     </section>
     <section class="info-section">
-      <div class="logo"><a href="./index.html">STELLA </a></div>
+      <div class="logo">
+        <a href="./index.html">STELLA<span>RCodes</span> </a>
+      </div>
       <div class="info-box">
         <h4>Email</h4>
-        <p>snaggenda@gmail.com</p>
+        <p>stellarcodes20@gmail.com</p>
         <h4>Phone</h4>
-        <p>647-969-2842</p>
+        <p>647-952-6224</p>
         <h4>Find Me On</h4>
         <div class="icon-section">
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/stella-naggenda/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/stellardevs"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/_stellan/?hl=en"
+            ><i class="fab fa-instagram"></i
+          ></a>
           <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
@@ -41,7 +49,7 @@
     <section class="content-area">
       <div class="img-container">
         <div class="form-section">
-          <form action="/" method="post">
+          <form action="/" method="post" data-netlify="true">
             <h5>Send a message</h5>
             <input type="text" name="name" required placeholder="Your Name" />
             <input type="text" name="email" required placeholder="Your Email" />
@@ -63,15 +71,15 @@
       </div>
 
       <div class="contact-section">
-        <h1>CONTACT US</h1>
+        <h1>CONTACT ME</h1>
         <div class="contact-info">
           <div class="contact-box">
             <h5>Phone</h5>
-            <p>647-969-2842</p>
+            <p>647-952-6224</p>
           </div>
           <div class="contact-box">
             <h5>Email</h5>
-            <p>snaggenda@gmail.com</p>
+            <p>stellarcodes20@gmail.com</p>
           </div>
           <div class="contact-box">
             <h5>Location</h5>
@@ -81,5 +89,21 @@
       </div>
     </section>
     <script type="text/javascript" src="./js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".menu-icon").on("click", function() {
+        if ($(this).hasClass("active")) {
+          $(".contact.menu-active").removeClass("menu-active");
+          $(".menu-icon.active").removeClass("active");
+        } else {
+          $(".contact").addClass("menu-active");
+          $(".menu-icon").addClass("active");
+        }
+      });
+    </script>
   </body>
 </html>

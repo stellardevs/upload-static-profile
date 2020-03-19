@@ -76,6 +76,13 @@
     font-weight: 300;
     line-height: 1.4;
     margin: 0 0 2rem 0; }
+  .home .profile-section .profile .fab {
+    font-size: 30px;
+    margin-right: 16px;
+    margin-top: 20px;
+    margin-left: 2px; }
+    .home .profile-section .profile .fab:hover {
+      color: #541e14; }
 
 @media (max-width: 767px) {
   .home .menu-icon {
@@ -94,7 +101,7 @@
     position: static; }
     .home .info-section .logo {
       height: 50px;
-      width: 70px;
+      width: 120px;
       font-size: 1.2rem; }
     .home .info-section .info-box {
       display: none; }
@@ -383,7 +390,7 @@ table {
     position: static; }
     .resume .info-section .logo {
       height: 50px;
-      width: 70px;
+      width: 120px;
       font-size: 1.2rem; }
     .resume .info-section .info-box {
       display: none; }
@@ -399,6 +406,58 @@ table {
       grid-template-columns: 1fr; }
       .resume .content-area .category .xp-section .xp-box {
         margin-bottom: 0; } }
+
+.menu-active .menu-icon .fas {
+  color: white; }
+
+.menu-active #menu {
+  background-color: #8c7870;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 1s ease-in-out; }
+  .menu-active #menu nav {
+    width: 400px;
+    text-align: center; }
+    .menu-active #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white; }
+      .menu-active #menu nav a:hover {
+        color: #541e14; }
+
+#menu {
+  background-color: #8c7870;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5s ease-in-out; }
+  #menu nav {
+    width: 400px;
+    text-align: center; }
+    #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white; }
+      #menu nav a:hover {
+        color: #541e14; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .resume .info-section {
@@ -448,13 +507,15 @@ table {
 .logo {
   border: 5px solid white;
   height: 100px;
-  width: 200px;
+  width: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: white;
   line-height: 0; }
+  .logo span {
+    opacity: 25%; }
 
 .info-section {
   padding: 54px;
@@ -530,7 +591,8 @@ table {
         transition: all 0.5s ease-in-out;
         -webkit-box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
         -moz-box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
-        box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25); }
+        box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
+        color: black; }
       .work-section .project-section .project-box .grey-bg {
         background: #efefef;
         position: absolute;
@@ -542,7 +604,8 @@ table {
         transition: all 0.3s ease-in-out;
         overflow: hidden; }
         .work-section .project-section .project-box .grey-bg:hover {
-          opacity: 0.9; }
+          opacity: 0.9;
+          color: black; }
           .work-section .project-section .project-box .grey-bg:hover .project-info .project-details {
             transform: translate3d(0, 0, 0);
             opacity: 1; }
@@ -580,6 +643,58 @@ table {
         text-transform: uppercase;
         margin-bottom: 1rem; }
 
+.menu-active .menu-icon .fas {
+  color: white; }
+
+.menu-active #menu {
+  background-color: #8c7870;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 1s ease-in-out; }
+  .menu-active #menu nav {
+    width: 400px;
+    text-align: center; }
+    .menu-active #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white; }
+      .menu-active #menu nav a:hover {
+        color: #541e14; }
+
+#menu {
+  background-color: #8c7870;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5s ease-in-out; }
+  #menu nav {
+    width: 400px;
+    text-align: center; }
+    #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white; }
+      #menu nav a:hover {
+        color: #541e14; }
+
 @media (max-width: 767px) {
   html,
   body {
@@ -600,7 +715,7 @@ table {
     position: static; }
     .work .info-section .logo {
       height: 50px;
-      width: 70px;
+      width: 120px;
       font-size: 1.2rem; }
     .work .info-section .info-box {
       display: none; }
@@ -782,6 +897,58 @@ table {
       font-weight: 300;
       line-height: 1.4; }
 
+.menu-active .menu-icon .fas {
+  color: white; }
+
+.menu-active #menu {
+  background-color: #8c7870;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 1s ease-in-out; }
+  .menu-active #menu nav {
+    width: 400px;
+    text-align: center; }
+    .menu-active #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white; }
+      .menu-active #menu nav a:hover {
+        color: #541e14; }
+
+#menu {
+  background-color: #8c7870;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5s ease-in-out; }
+  #menu nav {
+    width: 400px;
+    text-align: center; }
+    #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white; }
+      #menu nav a:hover {
+        color: #541e14; }
+
 @media (max-width: 767px) {
   .contact .menu-icon {
     top: -1px;
@@ -799,7 +966,7 @@ table {
     position: static; }
     .contact .info-section .logo {
       height: 50px;
-      width: 70px;
+      width: 120px;
       font-size: 1.2rem; }
     .contact .info-section .info-box {
       display: none; }

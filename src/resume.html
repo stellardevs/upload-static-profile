@@ -11,30 +11,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/main.scss">
   </head>
+  
   <body class="resume">
     <div class="menu-icon"><i class="fas fa-bars"></i></div>
     <section id="menu">
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="./index.html">Home</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./work.html">Portfolio</a>
+        <a href="./contact.html">Contact</a>
       </nav>
     </section>
     <section class="info-section">
-      <div class="logo"><a href="./index.html">STELLA</a>
+      <div class="logo"><a href="./index.html">STELLA<span>RCodes</span></a>
         
       </div>
       <div class="info-box">
         <h4>Email</h4>
-        <p>snaggenda@gmail.com</p>
+        <p>stellarcodes20@gmail.com</p>
         <h4>Phone</h4>
-        <p>647-969-2842</p>
+        <p>647-952-6224</p>
         <h4>Find Me On</h4>
         <div class="icon-section">
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/stella-naggenda/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/stellardevs"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/_stellan/?hl=en"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
@@ -73,19 +74,19 @@
                 </div>
                 <div class="xp-section">
                     <div class="xp-box">
-                        <h5>Cleveland State University, Cleveland</h5>
-                        <p>Political Science</p>
-                        <p>session: 2009-2010</p>
+                        <h5>NEBA Fine Arts</h5>
+                        <p>HTML Email Developer</p>
+                        <p>period: 2019-2020</p>
                     </div>
                     <div class="xp-box">
-                        <h5>York University, Toronto</h5>
-                        <p>Political Science</p>
-                        <p>session: 2010-2012</p>
+                      <h5>Stellar Real Estate</h5>
+                        <p>Front End Dev </p>
+                        <p>session: 2018-2020</p>
                     </div>
                     <div class="xp-box">
-                        <h5>OREA College</h5>
-                        <p>Real Estate </p>
-                        <p>session: 2013-2014</p>
+                      <h5>Path Real Estate Team</h5>
+                      <p>Social Media Marketer</p>
+                      <p>period: 2018-2019</p>
                     </div>
                 </div>
             </div>
@@ -94,5 +95,20 @@
       </div>
     </section>
     <script type="text/javascript" src="./js/index.js"></script>
+    <script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+    <script>
+      $('.menu-icon').on('click', function() {
+      if($(this).hasClass('active')) {
+      $(".resume.menu-active").removeClass("menu-active");
+      $(".menu-icon.active").removeClass("active");
+      } else {
+      $('.resume').addClass("menu-active");
+      $('.menu-icon').addClass("active");
+      }
+      })
+      </script>
   </body>
 </html>

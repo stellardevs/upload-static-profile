@@ -97,6 +97,15 @@
         line-height: 1.4;
         margin: 0 0 2rem 0;
       }
+      .fab {
+        font-size: 30px;
+        margin-right: 16px;
+        margin-top: 20px;
+        margin-left: 2px;
+        &:hover {
+          color: $hoverColor;
+        }
+      }
     }
   }
 }
@@ -124,7 +133,7 @@
       position: static;
       .logo {
         height: 50px;
-        width: 70px;
+        width: 120px;
         font-size: 1.2rem;
       }
       .info-box {
