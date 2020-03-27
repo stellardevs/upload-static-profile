@@ -122,6 +122,10 @@
       margin-bottom: 20px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .home .logo {
+    height: 70px;
+    width: 180px;
+    font-size: 2rem; }
   .home .info-section {
     width: 30%;
     padding: 56px 20px; }
@@ -141,7 +145,7 @@
       padding: 20% 20px 0; }
     .home .content-area .primary-btn,
     .home .content-area .ghost-btn {
-      margin-bottom: 20px; } }
+      margin-bottom: 5px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .home .content-area .img-container {
@@ -952,7 +956,7 @@ table {
 @media (max-width: 767px) {
   .contact .menu-icon {
     top: -1px;
-    right: 20px; }
+    right: 280px; }
     .contact .menu-icon .fas {
       color: white; }
   .contact .content-area {
