@@ -4,8 +4,8 @@
     <script src="https://kit.fontawesome.com/5f3eeb8ee9.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main.77bb5cfd.css">
-  <link rel="stylesheet" href="/js.00a46daa.css"></head>
-  <body class="contact">
+  <script src="/emails.js"></script></head>
+  <body class="work">
     <div class="menu-icon"><i class="fas fa-bars"></i></div>
     <section id="menu">
       <nav>
@@ -17,11 +17,11 @@
     </section>
     <section class="info-section">
       <div class="logo">
-        <a href="/index.html">STELLA<span>RCodes</span> </a>
+        <a href="/index.html">STELLA<span>RCodes</span></a>
       </div>
       <div class="info-box">
         <h4>Email</h4>
-        <p>stellarcodes20@gmail.com</p>
+        <p>stellarcodes@gmail.com</p>
         <h4>Phone</h4>
         <p>647-952-6224</p>
         <h4>Find Me On</h4>
@@ -35,46 +35,61 @@
     </section>
 
     <section class="content-area">
-      <div class="img-container">
-        <div class="form-section">
-          <form action="/" method="post" data-netlify="true">
-            <h5>Send a message</h5>
-            <input type="text" name="name" required="" placeholder="Your Name">
-            <input type="text" name="email" required="" placeholder="Your Email">
-            <input type="text" name="budget" placeholder="State Your Budget Range Here">
-            <textarea name="message" rows="16" required="" placeholder="Your Message"></textarea>
-
-            <button type="submit">send message</button>
-          </form>
+      <div class="scroll-section">
+        <!-- Work Starts  -->
+        <div class="work-section">
+          <div class="title">
+            <h1>Latest Works</h1>
+          </div>
+          <div class="project-section">
+            <a href="https://brave-jang-538efc.netlify.app/">
+              <div class="project-box" style="
+                  background: url(https://i.imgur.com/16EaEB5.png) no-repeat
+                    center center;
+                  background-size: cover;
+                ">
+                <div class="grey-bg">
+                  <div class="project-info">
+                    <div class="project-details">
+                      Client: Libre Pizza Plaza
+                      <br>Type: Website
+                    </div>
+                    <div class="project-title">
+                      Restaurant Website
+                    </div>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="bottom-box">
+            <h6>see more projects below..</h6>
+            <div class="project-holder">
+              <a href="/emails.html">
+                <h3 class="project-type">HTML Emails</h3></a>
+            </div>
+            <div class="project-holder">
+              <a href="/landing.html">
+                <h3 class="project-type">Landing Pages</h3></a>
+            </div>
+            <div class="project-holder">
+              <a href="/webapps.html">
+                <h3 class="project-type">Web Apps</h3></a>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="contact-section">
-        <h1>CONTACT ME</h1>
-        <div class="contact-info">
-          <div class="contact-box">
-            <h5>Phone</h5>
-            <p>647-952-6224</p>
-          </div>
-          <div class="contact-box">
-            <h5>Email</h5>
-            <p>stellarcodes20@gmail.com</p>
-          </div>
-          <div class="contact-box">
-            <h5>Location</h5>
-            <p>Toronto, Ontario</p>
-          </div>
-        </div>
+        <!-- Work Ends -->
       </div>
     </section>
     <script type="text/javascript" src="/js.00a46daa.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>$(".menu-icon").on("click", function () {
   if ($(this).hasClass("active")) {
-    $(".contact.menu-active").removeClass("menu-active");
+    $(".work.menu-active").removeClass("menu-active");
     $(".menu-icon.active").removeClass("active");
   } else {
-    $(".contact").addClass("menu-active");
+    $(".work").addClass("menu-active");
     $(".menu-icon").addClass("active");
   }
 });</script>
